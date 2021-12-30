@@ -103,9 +103,6 @@ axios.get(`${cardsAPI}/new/shuffle/`).then((data) => {
 drawBtn.addEventListener('click', function() {
 	axios.get(`${cardsAPI}/${deckId}/draw/`).then((data) => {
 		let cardsSrc = data.data.cards[0].image;
-		let angle = Math.random() * 90 - 45;
-		let randomX = Math.random() * 40 - 20;
-		let randomY = Math.random() * 40 - 20;
 		let cardImg = document.createElement('img');
 		cardImg.setAttribute('src', cardsSrc);
 		cardArea.append(cardImg);
