@@ -1,0 +1,35 @@
+body {
+    text-align: center;
+    background-color: green;
+  }
+  
+  #draw-a-card {
+    padding: 15px;
+    background-color: black;
+    color: white;
+    border-radius: 8px;
+    border: none;
+    display: none;
+    margin: 0 auto;
+  }
+  
+  #draw-a-card:hover {
+    cursor: pointer;
+    background-color: #444;
+  }
+  
+  #draw-a-card:active,
+  #draw-a-card:focus {
+    outline: none;
+  }
+  
+  #cards-area {
+    margin-top: 80px;
+  }
+  
+  #cards-area > img {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
